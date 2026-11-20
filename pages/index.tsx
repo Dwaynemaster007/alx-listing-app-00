@@ -1,4 +1,4 @@
-import { PROPERTYLISTINGSAMPLE } from "@/constants";
+import { HERO_IMAGE, PROPERTYLISTINGSAMPLE } from "@/constants";
 import Pill from "@/components/Pill";
 import PropertyCard from "@/components/PropertyCard";
 
@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         className="h-64 bg-cover bg-center text-white flex flex-col items-center justify-center rounded-lg"
-        style={{ backgroundImage: "url('https://example.com/hero.jpg')" }}
+        style={{ backgroundImage: `linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url(${HERO_IMAGE})` }}
       >
         <h1 className="text-3xl font-bold">Find your favorite place here!</h1>
         <p className="text-lg mt-2">The best prices for over 2 million properties worldwide.</p>

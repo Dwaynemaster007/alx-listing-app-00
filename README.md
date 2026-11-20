@@ -15,6 +15,14 @@ The starting point of an Airbnb-style property listing app, built with **Next.js
 - A booking page with `BookingForm`, `OrderSummary` and `CancellationPolicy`
 - Type-safe props with interfaces in `interfaces/index.ts`
 
+## Run it
+
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run build
+```
+
 ## Structure
 
 ```

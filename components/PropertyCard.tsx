@@ -1,9 +1,12 @@
+import Image from "next/image";
 import { PropertyProps } from "@/interfaces";
 
 const PropertyCard = ({ property }: { property: PropertyProps }) => {
   return (
     <div className="border rounded-lg overflow-hidden shadow-sm">
-      <img src={property.image} alt={property.name} className="w-full h-48 object-cover" />
+      <div className="relative h-48 w-full">
+        <Image src={property.image} alt={property.name} fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
+      </div>
       <div className="p-4">
         <h3 className="font-semibold text-lg">{property.name}</h3>
         <p className="text-sm text-gray-500">{property.address.city}, {property.address.country}</p>
